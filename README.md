@@ -2,10 +2,28 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Hi%20👋,%20I'm%20Mwaki%20Denis%20%7C%20Software%20Engineer&fontSize=32&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%"/>
 </div>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=300&speed=50&color=FFFFFF&center=true&vCenter=true&width=450&lines=Software+Engineer💻;Youtube😁+Tech💻+Educator🙈;Web+Developer+🌐;Open+Source+Contributor🤝;Full+Stack+MERN+Developer😁;Dart+with+flutter+Enthusiast🚀;AI+/+ML+Enthusiast&repeat=true" 
-    alt="Typing Animation"/>
-</p>
+<p id="typing" style="font-family: 'Fira Code'; font-size: 24px; color: white;"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  new Typed("#typing", {
+    strings: [
+      "Software Engineer💻",
+      "Youtube😁+Tech💻+Educator🙈",
+      "Web Developer🌐",
+      "Open Source Contributor🤝",
+      "Full Stack MERN Developer😁",
+      "Dart with Flutter Enthusiast🚀",
+      "AI+/ML Enthusiast"
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1000,
+    loop: true,
+    smartBackspace: true
+  });
+</script>
+
 
 
 
