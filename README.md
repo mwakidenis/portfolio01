@@ -2,12 +2,11 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Hi%20👋,%20I'm%20Mwaki%20Denis%20%7C%20Software%20Engineer&fontSize=32&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%"/>
 </div>
 
-  <p align="center">
-  <img 
-    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=300&speed=50&color=FFFFFF&center=true&vCenter=true&width=450&lines=Software+Engineer💻;Youtube😁+Tech💻+Educator🙈;Web+Developer+🌐;Open+Source+Contributor🤝;Full+Stack+MERN+Developer😁;Dart+with+flutter+Enthusiast🚀;AI+/+ML+Enthusiast" 
-    alt="Typing Animation"
-  />
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=300&speed=50&color=FFFFFF&center=true&vCenter=true&width=450&lines=Software+Engineer💻;Youtube😁+Tech💻+Educator🙈;Web+Developer+🌐;Open+Source+Contributor🤝;Full+Stack+MERN+Developer😁;Dart+with+flutter+Enthusiast🚀;AI+/+ML+Enthusiast&repeat=true" 
+    alt="Typing Animation"/>
 </p>
+
 
 
 <h3 align="center">Software Engineer | Web Developer | Tech Enthusiast | FullStack MERN Developer </h3>
