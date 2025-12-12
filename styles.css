@@ -71,6 +71,7 @@ body {
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0, 196, 204, 0.3);
     z-index: 1000;
+    padding: 0;
 }
 
 .nav-container {
@@ -175,7 +176,7 @@ body {
     }
 }
 
-/* Hero Section */
+/* Home Page Styles */
 .hero {
     padding: 4rem 2rem;
     max-width: 1200px;
@@ -202,14 +203,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-size: 200% 200%;
-    animation: gradientShift 3s ease infinite;
-}
-
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 .hero-subtitle {
@@ -221,7 +214,7 @@ body {
 
 .hero-description {
     font-size: 1.1rem;
-    color: #b0b0b0;
+    color: #00ff41; /* replaced #b0b0b0 */
     margin-bottom: 2rem;
     line-height: 1.7;
 }
@@ -257,18 +250,27 @@ body {
     box-shadow: 0 10px 25px rgba(0, 255, 65, 0.3);
 }
 
-.btn-secondary,
+.btn-secondary {
+    background: transparent;
+    color: #00c4cc;
+    border: 2px solid #00c4cc;
+}
+
+.btn-secondary:hover {
+    background: #00c4cc;
+    color: #000;
+    transform: translateY(-2px);
+}
+
 .btn-outline {
     background: transparent;
     color: #00c4cc;
     border: 2px solid #00c4cc;
 }
 
-.btn-secondary:hover,
 .btn-outline:hover {
     background: #00c4cc;
     color: #000;
-    transform: translateY(-2px);
 }
 
 .btn-small {
@@ -359,141 +361,6 @@ body {
 }
 
 .stat-card p {
-    color: #b0b0b0;
+    color: #00ff41; /* replaced #b0b0b0 */
     font-weight: 300;
 }
-
-/* Portfolio Page */
-.portfolio-hero {
-    text-align: center;
-    padding: 4rem 2rem 2rem;
-}
-
-.portfolio-hero h1 {
-    font-size: 3rem;
-    background: linear-gradient(135deg, #00ff41 0%, #00c4cc 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 1rem;
-}
-
-.portfolio-hero p {
-    font-size: 1.2rem;
-    color: #b0b0b0;
-}
-
-.portfolio-filters {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
-    flex-wrap: wrap;
-}
-
-.filter-btn {
-    padding: 10px 20px;
-    background: transparent;
-    color: #00c4cc;
-    border: 2px solid #00c4cc;
-    border-radius: 25px;
-    cursor: pointer;
-    font-family: 'Fira Code', monospace;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-    background: #00c4cc;
-    color: #000;
-}
-
-.portfolio-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-}
-
-.project-card {
-    background: rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(0, 196, 204, 0.3);
-    border-radius: 15px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    animation: slideInUp 0.6s ease-out;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    border-color: #00c4cc;
-    box-shadow: 0 20px 40px rgba(0, 196, 204, 0.2);
-}
-
-.project-card.hidden {
-    display: none;
-}
-
-.project-image {
-    height: 120px;
-    background: linear-gradient(135deg, #00ff41 0%, #00c4cc 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-image i {
-    font-size: 3rem;
-    color: #000;
-}
-
-.project-content {
-    padding: 1.5rem;
-}
-
-.project-content h3 {
-    color: #00c4cc;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.project-content p {
-    color: #b0b0b0;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-.project-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.project-tech span {
-    background: rgba(0, 255, 65, 0.2);
-    color: #00ff41;
-    padding: 4px 12px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-}
-
-.project-links {
-    display: flex;
-    gap: 1rem;
-}
-
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Remaining sections (Activity, About, Contact) and responsive queries remain unchanged. */
