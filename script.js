@@ -2,11 +2,27 @@
 class FloatingEmojis {
     constructor() {
         this.emojis = ["💻", "😁", "🙈", "🌐", "🤝", "🚀", "🤖", "🧩"];
+        this.intervalId = null;
         this.init();
     }
 
     init() {
-        setInterval(() => this.createEmoji(), 1000); // every 1 second
+        // Start emojis only on the home page
+        this.checkPage();
+        window.addEventListener('hashchange', () => this.checkPage());
+    }
+
+    checkPage() {
+        // Stop existing interval
+        if (this.intervalId) {
+            clearInterval(this.intervalId);
+            this.intervalId = null;
+        }
+
+        // Only run on home page
+        if (window.location.hash.slice(1) === 'home' || !window.location.hash) {
+            this.intervalId = setInterval(() => this.createEmoji(), 1000); // every 1 second
+        }
     }
 
     createEmoji() {
