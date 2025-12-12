@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Fira Code', monospace;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    background: linear-gradient(135deg, #001f2a 0%, #002f3a 50%, #001a33 100%);
     color: #ffffff;
     overflow-x: hidden;
     line-height: 1.6;
@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+    background: linear-gradient(135deg, #001f2a 0%, #002f3a 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(0, 16, 32, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0, 196, 204, 0.3);
     z-index: 1000;
@@ -214,7 +214,7 @@ body {
 
 .hero-description {
     font-size: 1.1rem;
-    color: #00ff41; /* replaced #b0b0b0 */
+    color: #00ff41;
     margin-bottom: 2rem;
     line-height: 1.7;
 }
@@ -286,7 +286,7 @@ body {
 }
 
 .coding-animation {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 32, 50, 0.8);
     border: 1px solid #00c4cc;
     border-radius: 15px;
     padding: 2rem;
@@ -322,7 +322,7 @@ body {
 /* Stats Section */
 .stats-section {
     padding: 4rem 2rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 32, 50, 0.5);
 }
 
 .stats-container {
@@ -361,6 +361,6 @@ body {
 }
 
 .stat-card p {
-    color: #00ff41; /* replaced #b0b0b0 */
+    color: #00ff41;
     font-weight: 300;
 }
