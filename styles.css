@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Fira Code', monospace;
-    background: linear-gradient(135deg, #001f2a 0%, #002f3a 50%, #001a33 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
     color: #ffffff;
     overflow-x: hidden;
     line-height: 1.6;
@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #001f2a 0%, #002f3a 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,13 +43,13 @@ body {
 
 .code-loader span:first-child,
 .code-loader span:last-child {
-    color: #00ff41;
-    animation: pulse 1.5s infinite;
+    color: #9b5de5; /* purple */
+    animation: pulse 0.6s infinite; /* faster pulse */
 }
 
 .code-loader span:nth-child(2) {
-    color: #00c4cc;
-    animation: typing 2s infinite;
+    color: #4361ee; /* blueish */
+    animation: typing 0.8s infinite; /* faster typing */
 }
 
 @keyframes pulse {
@@ -67,9 +67,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 16, 32, 0.95);
+    background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0, 196, 204, 0.3);
+    border-bottom: 1px solid rgba(67, 97, 238, 0.3);
     z-index: 1000;
     padding: 0;
 }
@@ -89,12 +89,12 @@ body {
     gap: 10px;
     font-weight: 600;
     font-size: 1.2rem;
-    color: #00c4cc;
+    color: #4361ee; /* bluish */
 }
 
 .nav-brand i {
     font-size: 1.5rem;
-    color: #00ff41;
+    color: #9b5de5; /* purple */
 }
 
 .nav-menu {
@@ -115,8 +115,8 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #00c4cc;
-    background: rgba(0, 196, 204, 0.1);
+    color: #4361ee;
+    background: rgba(67, 97, 238, 0.1);
 }
 
 .nav-link::after {
@@ -126,7 +126,7 @@ body {
     left: 50%;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #00ff41, #00c4cc);
+    background: linear-gradient(90deg, #9b5de5, #4361ee);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -145,7 +145,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #00c4cc;
+    background: #4361ee;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -199,7 +199,7 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #00ff41 0%, #00c4cc 100%);
+    background: linear-gradient(135deg, #9b5de5 0%, #4361ee 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -207,14 +207,14 @@ body {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: #00c4cc;
+    color: #4361ee;
     margin-bottom: 1.5rem;
     font-weight: 400;
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: #00ff41;
+    color: #9b5de5;
     margin-bottom: 2rem;
     line-height: 1.7;
 }
@@ -241,35 +241,35 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #00ff41 0%, #00c4cc 100%);
+    background: linear-gradient(135deg, #9b5de5 0%, #4361ee 100%);
     color: #000;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 255, 65, 0.3);
+    box-shadow: 0 10px 25px rgba(155, 93, 229, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #00c4cc;
-    border: 2px solid #00c4cc;
+    color: #4361ee;
+    border: 2px solid #4361ee;
 }
 
 .btn-secondary:hover {
-    background: #00c4cc;
+    background: #4361ee;
     color: #000;
     transform: translateY(-2px);
 }
 
 .btn-outline {
     background: transparent;
-    color: #00c4cc;
-    border: 2px solid #00c4cc;
+    color: #4361ee;
+    border: 2px solid #4361ee;
 }
 
 .btn-outline:hover {
-    background: #00c4cc;
+    background: #4361ee;
     color: #000;
 }
 
@@ -286,14 +286,14 @@ body {
 }
 
 .coding-animation {
-    background: rgba(0, 32, 50, 0.8);
-    border: 1px solid #00c4cc;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #4361ee;
     border-radius: 15px;
     padding: 2rem;
     font-family: 'Fira Code', monospace;
     font-size: 1rem;
-    box-shadow: 0 20px 40px rgba(0, 196, 204, 0.1);
-    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 20px 40px rgba(67, 97, 238, 0.1);
+    animation: float 1.2s ease-in-out infinite; /* faster float */
 }
 
 @keyframes float {
@@ -303,12 +303,12 @@ body {
 
 .code-line {
     margin: 0.5rem 0;
-    animation: typewriter 4s infinite;
+    animation: typewriter 1.5s infinite; /* faster typing */
 }
 
 .code-keyword { color: #ff6b6b; }
-.code-variable { color: #4ecdc4; }
-.code-operator { color: #45b7d1; }
+.code-variable { color: #4361ee; }
+.code-operator { color: #9b5de5; }
 .code-string { color: #96ceb4; }
 .code-array { color: #feca57; }
 .code-method { color: #ff9ff3; }
@@ -322,7 +322,7 @@ body {
 /* Stats Section */
 .stats-section {
     padding: 4rem 2rem;
-    background: rgba(0, 32, 50, 0.5);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .stats-container {
@@ -334,8 +334,8 @@ body {
 }
 
 .stat-card {
-    background: rgba(0, 196, 204, 0.1);
-    border: 1px solid rgba(0, 196, 204, 0.3);
+    background: rgba(67, 97, 238, 0.1);
+    border: 1px solid rgba(67, 97, 238, 0.3);
     border-radius: 15px;
     padding: 2rem;
     text-align: center;
@@ -344,23 +344,23 @@ body {
 
 .stat-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 196, 204, 0.2);
-    border-color: #00c4cc;
+    box-shadow: 0 20px 40px rgba(67, 97, 238, 0.2);
+    border-color: #4361ee;
 }
 
 .stat-card i {
     font-size: 3rem;
-    color: #00ff41;
+    color: #9b5de5;
     margin-bottom: 1rem;
 }
 
 .stat-card h3 {
     font-size: 2.5rem;
-    color: #00c4cc;
+    color: #4361ee;
     margin-bottom: 0.5rem;
 }
 
 .stat-card p {
-    color: #00ff41;
+    color: #9b5de5;
     font-weight: 300;
 }
