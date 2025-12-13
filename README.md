@@ -385,7 +385,7 @@ src="https://img.shields.io/github/followers/mwakidenis?logo=github&style=for-th
 ---
 
 ## 📈 GitHub Activity Graph💹  
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=mwakidenis&theme=react-dark)](https://github.com/mwakidenis/github-readme-activity-graph)
+[![Mwaki Denis's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=mwakidenis&theme=react-dark)](https://github.com/mwakidenis/github-readme-activity-graph)
 
 ---
 
