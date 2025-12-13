@@ -10,7 +10,7 @@
 </p>
 
 
-<h3 align="center">Software Engineer | Web Developer | Tech Enthusiast | FullStack MERN Developer </h3>
+<h3 align="center">Software Engineer | Web Developer | Cyber Security Enthusiast | FullStack MERN Developer </h3>
 
 
 ---
