@@ -278,7 +278,7 @@
 
 <p align="center">
   <img width="48%" src="https://github-readme-stats.vercel.app/api?username=mwakidenis&show_icons=true&theme=radical" />
-  <img width="48%" src="https://nirzak-streak-stats.vercel.app/?user=mwakidenis&theme=radical&hide_border=false" />
+  <img width="48%" src="https://mwakidenis-streak-stats.vercel.app/?user=mwakidenis&theme=radical&hide_border=false" />
 
 <table>
 <tr>
@@ -370,7 +370,7 @@ src="https://img.shields.io/github/followers/mwakidenis?logo=github&style=for-th
 ## 🛠️ Projects I'm Proud Of
 | Project            | Stack            | Live Demo                | Repo |
 |----------------|-----------------|---------------------|-------------------|
-| 🌐Mpesa Based WiFi Billing System 🤖    | Javascript, Typescript, React | [Live](https://anotherone-production-dcdb.up.railway.app/) | [Repo](https://github.com/mwakidenis/Mpesa-Based_WiFi_Billing_System.git) |
+| 🌐Mpesa Based WiFi Billing System 🤖    | Javascript, Typescript, React, Miktrotik-API | [Live](https://anotherone-production-dcdb.up.railway.app/) | [Repo](https://github.com/mwakidenis/Mpesa-Based_WiFi_Billing_System.git) |
 | Agri-Market-System👩‍🌾🌱    | React/Supabase Stack, AI, Tailwind CSS | [Live](https://farm-connect-market-wise.vercel.app/) | [Repo](https://github.com/mwakidenis/Agri-Market-System.git) |
 | Church Event Management System 🌐     | React, Typescript, TanStack Query | [Live](https://church-digital-system.vercel.app/) | [Repo](https://github.com/mwakidenis/Church-Event-Management-System.git) |
 | Agro-Regen-AI🌱💚   | Supabase, AI, APIs, Typescript | [Live](https://agro-regen-ai.vercel.app/) | [Repo](https://github.com/mwakidenis/AI-Powered-Regenerative-Agriculture-System.git) |
