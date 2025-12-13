@@ -1,5 +1,7 @@
 
-<div align="center">  ![Image](https://github.com/user-attachments/assets/5fec6f3e-8ff6-4c49-abf1-8ccbb4352345)
+<div align="center"> 
+  
+  ![Developer Banner](https://github.com/user-attachments/assets/5fec6f3e-8ff6-4c49-abf1-8ccbb4352345)
 
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Hi%20👋,%20I'm%20Mwaki%20Denis%20%7C%20SOFTWARE%20ENGINEER&fontSize=32&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%"/>
