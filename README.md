@@ -278,12 +278,12 @@
 
 ---
 <div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=📊GitHub%20Analytics&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,18&height=180&section=header&text=📊GitHub%20Analytics&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32"/>
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=mwakidenis&show_icons=true&theme=radical" />
-  <img width="48%" src="https://mwakidenis-streak-stats.vercel.app/?user=mwakidenis&theme=radical&hide_border=false" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=mwakidenis&show_icons=true&theme=react-dark" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=mwakidenis&theme=react-dark&hide_border=false" />
+
 
 <table>
 <tr>
