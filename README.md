@@ -277,9 +277,7 @@
 -->
 
 ---
-<div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,2&height=180&section=header&text=📊GitHub%20Analytics&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32"/>
-</div>
+<div align="center"> <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,0&height=180&section=header&text=📊GitHub%20Analytics&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32"/> </div>>
 
 
 
