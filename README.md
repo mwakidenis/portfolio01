@@ -340,7 +340,7 @@ Watch the blocks stack!
 🟦🟨🟪🟩🟥🟪🟩  
 
 Keep stacking and line clearing!  
-[Play real Tetris here inside my portfolio]
+Play real Tetris here inside my portfolio
 
 ---
 
