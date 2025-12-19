@@ -361,7 +361,7 @@ Play real Tetris here inside my portfolio
 </p>
 
 </div>
-
+---
 ### ✨ Fun Zone
 <div align="center">
   <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card"/>
