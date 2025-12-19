@@ -307,20 +307,6 @@
 </p>
 
 ---
-## 🎮 Tetris Fun
-
-Watch the blocks stack!  
-
-🟦🟥🟩🟨🟪🟦🟨  
-🟥🟩🟪🟦🟩🟨🟥  
-🟩🟨🟥🟦🟪🟩🟦  
-🟪🟦🟨🟥🟩🟦🟨  
-🟦🟨🟪🟩🟥🟪🟩  
-
-Keep stacking and line clearing!  
-[Play real Tetris here](https://tetris.com/play-tetris)
-
----
 
 ### 🏆 **GitHub Trophies**
 <p align="center">
@@ -341,6 +327,20 @@ src="https://img.shields.io/github/followers/mwakidenis?logo=github&style=for-th
 ![Stars](https://img.shields.io/badge/dynamic/json?url=https://api.github-star-counter.workers.dev/user/mwakidenis&label=Stars&query=$.stars&color=brightgreen&logo=github)
 
 </div>
+
+---
+## 🎮 Tetris Fun
+
+Watch the blocks stack!  
+
+🟦🟥🟩🟨🟪🟦🟨  
+🟥🟩🟪🟦🟩🟨🟥  
+🟩🟨🟥🟦🟪🟩🟦  
+🟪🟦🟨🟥🟩🟦🟨  
+🟦🟨🟪🟩🟥🟪🟩  
+
+Keep stacking and line clearing!  
+[Play real Tetris here inside my portfolio]
 
 ---
 
