@@ -1,0 +1,23 @@
+name: Two Minute Update
+
+on:
+  schedule:
+    - cron: "*/2 * * * *"   # every 2 minutes
+
+permissions:
+  contents: write
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update timestamp
+        run: |
+          echo "Last checked: $(date -u)" >> updates.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add updates.txt
+          git commit -m "Update last checked timestamp"
+          git push
