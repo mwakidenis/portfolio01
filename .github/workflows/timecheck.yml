@@ -11,32 +11,13 @@ jobs:
   commit:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Checkout the repository
       - uses: actions/checkout@v3
 
-      # Step 2: Update timestamp safely
-      - name: Update timestamp safely
+      - name: Update timestamp
         run: |
-          # Pull latest changes to avoid conflicts
-          git pull --rebase
-
-          # Set commit author
+          echo "Last checked: $(date -u)" >> updates.txt
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # Ensure the file exists
-          touch updates.txt
-
-          # Append the current UTC timestamp
-          echo "Last checked: $(date -u)" >> updates.txt
-
-          # Check if there are any changes to commit
-          if git diff --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-
-          # Stage, commit, and push changes
           git add updates.txt
           git commit -m "Update last checked timestamp"
-          git push --force-with-lease
+          git push
