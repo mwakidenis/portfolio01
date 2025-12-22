@@ -2,7 +2,7 @@ name: Two Minute Update
 
 on:
   schedule:
-    - cron: "*/2 * * * *"   # every 2 minutes
+    - cron: "*/2 * * * *"   # every 2 minutes (approximate)
 
 permissions:
   contents: write
@@ -15,9 +15,20 @@ jobs:
 
       - name: Update timestamp
         run: |
+          # Create or update updates.txt with the current UTC time
           echo "Last checked: $(date -u)" >> updates.txt
+
+          # Configure git
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Stage changes
           git add updates.txt
-          git commit -m "Update last checked timestamp"
-          git push
+
+          # Commit only if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m "Update last checked timestamp"
+            git push
+          else
+            echo "No changes to commit"
+          fi
