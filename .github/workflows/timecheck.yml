@@ -18,9 +18,9 @@ jobs:
           # Create or update updates.txt with the current UTC time
           echo "Last checked: $(date -u)" >> updates.txt
 
-          # Configure git
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Configure git to use your account
+          git config user.name "mwakidenis"
+          git config user.email "mwakidenice@gmail.com"
 
           # Stage changes
           git add updates.txt
