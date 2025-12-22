@@ -1,0 +1,40 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: "19 16 * * *"   # every day at 4:19 PM UTC
+  workflow_dispatch:        # allow manual run
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout repository
+      - uses: actions/checkout@v3
+
+      # 2️⃣ Update README timestamp
+      - name: Update README timestamp
+        run: |
+          DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
+
+          if grep -q "Last updated:" README.md; then
+            sed -i "s/Last updated:.*/Last updated: $DATE/" README.md
+          else
+            echo "" >> README.md
+            echo "Last updated: $DATE" >> README.md
+          fi
+
+          git config user.name "mwakidenis"
+          git config user.email "mwakidenice@gmail.com"
+
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Update README timestamp"
+            git push
+          else
+            echo "No changes to commit"
+          fi
