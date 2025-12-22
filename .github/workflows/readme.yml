@@ -1,9 +1,9 @@
-name: Update README Automation
+name: Daily README Timestamp Update
 
 on:
+  workflow_dispatch:       # manual trigger
   schedule:
-    - cron: "31 13 * * *"   # every day at 13:31 UTC
-  workflow_dispatch:        # allow manual run
+    - cron: "41 13 * * *"  # daily at 13:41 UTC
 
 permissions:
   contents: write
@@ -13,31 +13,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repository
+      # 1️⃣ Checkout the repository
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # needed for full git history
 
-      # 2️⃣ Update README.md timestamp
-      - name: Update README timestamp
+      # 2️⃣ Update timestamp and commit
+      - name: Update timestamp and commit
         run: |
-          DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
+          # Generate current UTC timestamp
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+          echo "Updating README timestamp to: $TIMESTAMP"
+
+          # Line to insert/update
+          TIMESTAMP_LINE="Last updated: $TIMESTAMP"
 
           # Replace existing timestamp or append if missing
           if grep -q "Last updated:" README.md; then
-            sed -i "s/Last updated:.*/Last updated: $DATE/" README.md
+            sed -i "s/Last updated:.*/$TIMESTAMP_LINE/" README.md
           else
             echo "" >> README.md
-            echo "Last updated: $DATE" >> README.md
+            echo "$TIMESTAMP_LINE" >> README.md
           fi
 
-          # Configure Git identity
+          # Configure Git
           git config user.name "mwakidenis"
           git config user.email "mwakidenice@gmail.com"
 
-          # Commit only if README changed
+          # Stage README
           git add README.md
-          if ! git diff --cached --quiet; then
-            git commit -m "Update README timestamp"
-            git push origin HEAD
-          else
-            echo "No README changes to commit"
-          fi
+
+          # Always commit (even if unchanged) to ensure contribution
+          git commit -m "Auto-update README timestamp: $TIMESTAMP" --allow-empty
+          git push origin HEAD
