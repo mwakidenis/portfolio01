@@ -1,6 +1,6 @@
 <div align="center"> 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,4,18&height=220&section=header&text=Hi%20👋,%20I'm%20Mwaki%20Denis%20%7C%20SOFTWARE%20ENGINEER&fontSize=32&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%"/>
-
+ 
 <p align="center" style="font-family: 'Fira Code'; font-size: 24px; color: white;">
     <img
   src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=32FF7E&center=true&vCenter=true&width=450&lines=💻;😁;💻;🙈;🌐;🤝;😁;🚀;🤖&repeat=true"
