@@ -5,7 +5,6 @@
     <img
   src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=32FF7E&center=true&vCenter=true&width=450&lines=💻;😁;💻;🙈;🌐;🤝;😁;🚀;🤖&repeat=true"
   alt="Continuous Emoji Animation"/>
-
 <h3 align="center">Software Engineer | Web Developer | Cybersecurity Enthusiast | FullStack MERN Developer </h3>
 
 ---
