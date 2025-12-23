@@ -288,7 +288,10 @@
 </td>
 <td width="33%">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mwakidenis&theme=transparent" />
+<p>
+  <img width="49%" align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mwakidenis&theme=dark&background=0d1117&date_format=M%20j%5B%2C%20Y%5D" alt="mwakidenis" />
+</p>
+
 
 </td>
 <td width="33%">
