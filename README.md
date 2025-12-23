@@ -7,10 +7,6 @@
     alt="Continuous Emoji Animation"
   />
 </p>
-
-
-
-
 <h3 align="center">Software Engineer | Web Developer | Cybersecurity Enthusiast | FullStack MERN Developer </h3>
 
 
