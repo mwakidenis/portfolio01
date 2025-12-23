@@ -13,7 +13,8 @@
 
 <p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
-<u>👨‍💻 About Me</u> 
+**👨‍💻 About Me**
+ 
 
 - 🔭 I’m currently working on **👉[Mpesa Based WiFi Billing System](https://github.com/mwakidenis/Mpesa-Based_WiFi_Billing_System)**  
 - 🌐 Visit my **recently completed project 👉[✨ Egg & Poultry Store ✨](https://poultry-farm-tawny.vercel.app/)**
